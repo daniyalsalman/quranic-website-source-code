@@ -176,6 +176,7 @@ body {
 
 .features p{
     color: white;
+    padding-top: 10px;
 }
 
 .features div:hover a {
