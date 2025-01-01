@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background: url("back11.avif") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar {
+    background-color: rgba(39, 39, 39, 0.6);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding-left: 80px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.buttons .btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Login Form */
+.form-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 150px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.header p a {
+    color: white;
+    text-decoration: none;
+}
+
+.header h2 {
+    margin-top: 10px;
+}
+
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input {
+    font-size: 15px;
+    background: rgba(221, 215, 215, 0.2);
+    color: black;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input::placeholder {
+    color: black;
+}
+
+.input:hover,
+.input:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-group i {
+    position: relative;
+    top: -35px;
+    left: 15px;
+    color: #fff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #080808;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.options label,
+.options a {
+    color: white;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(54, 49, 49);
+    border-radius: 10px;
+}
