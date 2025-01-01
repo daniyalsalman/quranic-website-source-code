@@ -174,7 +174,7 @@ body {
     transition: color 0.3s;
 }
 
-.features p{
+.features p {
     color: white;
     padding-top: 10px;
 }
@@ -185,7 +185,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.social-ions{
+.social-ions {
     
     display: flex;
     align-items: center;
