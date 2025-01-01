@@ -11,13 +11,23 @@ body {
     color: #fff;
 }
 
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    background: linear-gradient(45deg, #696969, #505050, #383838, #202020, #000000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .navbar {
     background-color: rgba(39, 39, 39, 0.6);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -28,6 +38,9 @@ body {
     color: white;
     font-size: 24px;
     font-weight: 600;
+    background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .buttons .btn {
@@ -47,23 +60,37 @@ body {
     color: white;
 }
 
-
 .form-box {
     width: 100%;
     max-width: 500px;
-    margin: 150px auto;
+    margin: 25px auto;
+    margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 20px;
 }
 
+.header {
+    padding: 0 7px;
+}
+
 .header p a {
     color: white;
     text-decoration: none;
+    transition: 0.3s ease;
+    margin-left: 4px;
+}
+
+.header p a:hover {
+    color: rgba(0, 0, 0, 0.689);
+    font-weight:bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header h2 {
     margin-top: 10px;
+    justify-self: center;
+    font-size:xx-large;
 }
 
 .input-group {
@@ -72,9 +99,9 @@ body {
 }
 
 .input {
-    font-size: 15px;
+    font-size: 17px;
     background: rgba(221, 215, 215, 0.2);
-    color: black;
+    color: rgb(255, 255, 255);
     height: 50px;
     width: 100%;
     padding: 0 10px 0 45px;
@@ -88,8 +115,7 @@ body {
     color: black;
 }
 
-.input:hover,
-.input:focus {
+.input:hover, .input:focus {
     background: rgba(255, 255, 255, 0.25);
 }
 
@@ -117,7 +143,6 @@ body {
     color: black;
 }
 
-
 .options {
     display: flex;
     justify-content: space-between;
@@ -126,8 +151,7 @@ body {
     margin-top: 10px;
 }
 
-.options label,
-.options a {
+.options label, .options a {
     color: white;
     text-decoration: none;
 }
