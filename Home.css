@@ -21,7 +21,7 @@ body {
 
 .header h1 {
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
@@ -51,6 +51,7 @@ body {
     border-radius: 20px;
 }
 
+
 .login {
     background-color: black;
     color: white;
@@ -76,6 +77,20 @@ body {
     width: 100%;
     height: 400px;
     overflow: hidden;
+}
+
+.slider::before { 
+    content: "Welcome to Quranic"; 
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 4rem;
+    text-align: center;
+    background: linear-gradient(45deg, #ffcf00,#ffbf00,#ffa600,#ff9500,#ff8800);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    z-index: 1; pointer-events: none;
+    opacity: 0.7;
 }
 
 .slides {
