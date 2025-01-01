@@ -1,11 +1,10 @@
-
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #000000;
     color: #DDDDDD;
-    line-height: 1.6;
+    
 }
 
 
@@ -20,9 +19,12 @@ body {
 }
 
 .header .logo-container h1 {
-    font-size: 1.8rem;
-    margin: 0;
-    color: white
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 .nav ul {
@@ -46,9 +48,9 @@ body {
 }
 
 .nav a:hover {
-color: white;
-border: 1px solid #008080;
-background-color: #008080;
+color: black;
+border: 1px solid #ffd700;
+background-color: #ffd700;
 border-radius: 20px;
 
 }
@@ -61,7 +63,7 @@ border-radius: 20px;
 
 .container h2 {
     font-size: 2.5rem;
-    color: #008080; 
+    color: #ffd700; 
     margin-bottom: 30px;
     text-transform: uppercase;
 }
@@ -72,16 +74,18 @@ border-radius: 20px;
     justify-content: center;
     gap: 30px;
     
+    
 }
 
 .playlist-card {
-    background-color: #1a1a1a;
-    border: 2px solid #1a1a1a;; 
-    border-radius: 10px;
+    background-color: #181818;
     padding: 20px;
-    max-width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 128, 128, 0.5);
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .playlist-card h3 {
@@ -100,36 +104,44 @@ border-radius: 20px;
     display: block;
     text-decoration: none;
     color:white; 
-    border: 2px solid black;
+    border: 2px solid #ffd700;
     background-color: black; 
     padding: 10px 15px;
     border-radius: 24px;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.5);
+    box-shadow: 0 4px 8px #ffd700;
 
 }
 
 .playlist-card .btn:hover {
-    background-color:#008080;
+    background-color:#ffd700;
     transform: translateY(-3px);
+    color: black;
 }
 
 .playlist-card:hover {
-    border-color: #008080; 
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 12px; 
+    background: linear-gradient( #181818, #181818) padding-box,
+                linear-gradient(45deg, #ffd700, #ffc700, #ffb700, #ffa700, #ff9700) border-box;
 }
 
 .footer {
     background-color: #121212; 
-    color: #008080;
+    color: #ffd700;
     text-align: center;
     padding: 15px 20px;
     font-size: 0.9rem;
-    border-top: 4px solid #008080; 
+    border-top: 2px solid #ffd700; 
+    
 }
 
+.playlist-card h3:hover{
+    color: #ffd700;
+}
 .footer p {
     margin: 0;
 }
