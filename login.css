@@ -47,7 +47,7 @@ body {
     color: white;
 }
 
-/* Login Form */
+
 .form-box {
     width: 100%;
     max-width: 500px;
@@ -117,7 +117,7 @@ body {
     color: black;
 }
 
-/* Options */
+
 .options {
     display: flex;
     justify-content: space-between;
