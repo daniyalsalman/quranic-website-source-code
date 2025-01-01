@@ -23,7 +23,7 @@ body {
 
 .navbar {
     background-color: rgba(39, 39, 39, 0.6);
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,12 +31,11 @@ body {
     top: 0;
     width: 100%;
     z-index: 100;
-    padding-left: 20px;
 }
 
 .logo {
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
     background-clip: text;
