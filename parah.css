@@ -50,12 +50,35 @@ border-radius: 20px;
 }
 
 .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #1a1a1a; 
-    border-bottom: 2px solid #ffd700 ;
-    margin-bottom: 20px;
-}
+    
+    
+    height: 200px;
+        border-bottom: 2px solid #ffd700;
+     
+        background-color: #1a1a1a;
+        text-align: center;
+        padding: 30px 20px;
+        border-bottom: 2px solid #ffd700;
+        position: relative; 
+        color: white; 
+        z-index: 1; 
+    }
+    
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('quran-6114872_640.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        opacity: 0.3; 
+        z-index: -1;
+        
+    }
 
 .hero h2 {
     font-size: 28px;
