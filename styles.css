@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -41,8 +41,6 @@ body {
     margin-right: 10px;
 }
 
-
-
 .btn {
     text-decoration: none;
     padding: 8px 15px;
@@ -63,7 +61,6 @@ body {
     color: black;
 }
 
-
 .btn:hover {
     background-color: white;
     color: black;
@@ -73,7 +70,6 @@ body {
     background-color: black;
     color: white;
 }
-
 
 .slider {
     position: relative;
@@ -115,9 +111,6 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
-
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -130,13 +123,13 @@ body {
     background-color: #181818;
     padding: 20px;
     text-align: center;
-    border-radius: 12px;
-    
+    border-radius: 12px;    
     box-shadow: 0 4px 10px rgba(0, 128, 128, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     border: 2px solid transparent;
 }
+
 .features div {
     background-color: #181818;
     padding: 20px;
@@ -165,6 +158,7 @@ body {
     color: white;
     transition: color 0.3s;
 }
+
 .features p{
     color: white;
 }
@@ -173,7 +167,8 @@ body {
     background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-} 
+}
+
 .social-ions{
     
     display: flex;
@@ -181,7 +176,7 @@ body {
     justify-content: center;
 }
 
-h2{
+h2 {
     
     display: flex;
     justify-content: center;
@@ -191,27 +186,26 @@ h2{
     padding: 10px;
 }
 
-.heading{
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.heading p{
+.heading p {
     width: 50%;
- 
-
     border: 1px solid white;
     text-align: center;
     justify-content: center;
     padding: 25px;
     margin: 10px;
     border-radius: 30px;
-    
 }
-.heading >*{
+
+.heading >* {
     color: white;
 }
+
 .heading p {
     background-color: #181818;
     padding: 20px;
@@ -225,8 +219,7 @@ h2{
                 0 6px 15px rgba(255, 183, 0, 0.4);
 }
 
-
-.heading p:hover{
+.heading p:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     border-radius: 12px; 
@@ -235,10 +228,8 @@ h2{
     
 }
 
-.social-ions a{
-    
+.social-ions a {
         display:inline-flex;
-        
         justify-content: center;
         align-items: center;
         width: 2.2rem;
@@ -250,8 +241,7 @@ h2{
         margin: 3rem 1.5rem 3rem 0;
         transition: 0.3s ease;
         color:white;
-        
-    }
+}
     
 .social-ions a:hover {
     color: black;
@@ -341,4 +331,3 @@ h2{
         font-size: 0.8rem;
     }
 }
-
