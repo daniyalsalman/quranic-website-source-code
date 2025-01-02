@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #DDDDDD;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid  #ffd700;
+    
+}
+
+.header .logo-container h1 {
+    display: flex;
+    margin: 3px 7px;
+    align-items: center;
+    background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.logo-container a{
+    text-decoration: none;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: black;
+    border: 1px solid #ffd700;
+    background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
+    border-radius: 20px;
+
+}
+
+
+.part {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+.part > div {
+    background-color: #181818;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.6),
+                0 4px 10px rgba(255, 199, 0, 0.5),
+                0 6px 15px rgba(255, 183, 0, 0.4);
+}
+
+.part > div:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 12px; 
+    background: linear-gradient( #181818, #181818) padding-box,
+                linear-gradient(45deg, #ffd700, #ffc700, #ffb700, #ffa700, #ff9700) border-box;
+}
+
+.part h2 {
+    color: white; 
+    margin-bottom: 10px;
+}
+
+.part > div:hover h2 {
+    background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.part p {
+    margin-bottom: 15px;
+}
+
+.part p:hover {
+    background: linear-gradient(45deg, #ffef90, #ffde80, #ffcd70, #ffbc60, #ffab50);
+    background-clip: text;
+    font-weight: bolder;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-5px);
+}
+
+audio {
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+}
+audio::-webkit-media-controls-panel{
+    background: linear-gradient(45deg, #c5a500, #b49400 25%, #937200 50%, #b49400 75%, #c5a500) border-box;
+    -webkit-text-fill-color: black;
+    
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #ffd700;
+    font-size: 0.9rem;
+    border-top: 2px solid #ffd700;
+}
+
+.footer p {
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2f2f2f; 
+    border-radius: 10px;
+}
