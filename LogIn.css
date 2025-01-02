@@ -43,20 +43,20 @@ body {
 }
 
 .buttons .btn {
-    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 30px;
-    margin: 0 10px;
-    transition: 0.3s ease;
+    padding: 13px;
+    font-weight: bold;
+
+    border-radius: 20px;
+    background-color: transparent;
 }
 
 .buttons .btn:hover {
-    background-color: black;
-    color: white;
+    color: black;
+    border: 1px solid #ffd700;
+    background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
+    border-radius: 20px;
 }
 
 .form-box {
@@ -99,7 +99,6 @@ body {
 
 .input {
     font-size: 17px;
-    background: rgba(221, 215, 215, 0.2);
     color: rgb(255, 255, 255);
     height: 50px;
     width: 100%;
@@ -108,6 +107,8 @@ body {
     border-radius: 30px;
     outline: none;
     transition: 0.2s ease;
+    background: linear-gradient(45deg, #ffd700, #ffc700, #ffb700, #ffa700, #ff9700); /* Gradient background */
+    background-clip: padding-box; /* Ensures the background applies only to the input area */
 }
 
 .input::placeholder {
@@ -115,7 +116,7 @@ body {
 }
 
 .input:hover, .input:focus {
-    background: rgba(255, 255, 255, 0.25);
+    background: linear-gradient(45deg, #ffd700, #ffc700, #ffb700, #ffa700, #ff9700); /* Same gradient on hover/focus */
 }
 
 .input-group i {
