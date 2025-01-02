@@ -28,251 +28,417 @@
         <p>Listen to Quranic verses with a seamless and soothing experience.</p>
     </section>
 
+    <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a Parah.">
+        <button onclick="searchSurah()">Search</button>
+    </section>
+
     <section class="parah-list">
         <h2>Parts of Quran</h2>
 
-        <div class="grid-container">
-            <div class="parah-item">
+        <div class="grid-container" id="parahContainer">
+    
+            <div class="parah-item" onclick="toggleAudio(1)">
                 <p>1. Al-Fatiha to Al-Baqarah (Parah 1)</p>
-                <audio controls>
-                    <source src="1.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+                <div class="extra-info" id="parah1-info">
+                    <audio controls id="audio1">
+                        <source src="1.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 1: Al-Fatiha to Al-Baqarah.</p>
+                    <p>This parah contains Surah Al-Fatiha, the opening chapter of the Quran, and the beginning of Surah Al-Baqarah. It includes fundamental guidelines for Muslims and is recited in daily prayers.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
+            
+            <div class="parah-item" onclick="toggleAudio(2)">
                 <p>2. Sayaqool (Parah 2)</p>
-                <audio controls>
-                    <source src="2.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+                <div class="extra-info" id="parah2-info">
+                    <audio controls id="audio2">
+                        <source src="2.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 2: Sayaqool.</p>
+                    <p>This parah continues the story of the Children of Israel and addresses the need for faith, patience, and following Allah's commandments. It emphasizes the importance of belief in the unseen and trust in Allah's will.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
+
+            <div class="parah-item" onclick="toggleAudio(3)">
                 <p>3. Tilkal Rusul (Parah 3)</p>
-                <audio controls>
-                    <source src="3.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+                <div class="extra-info" id="parah3-info">
+                    <audio controls id="audio3">
+                        <source src="3.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 3: Tilkal Rusul.</p>
+                    <p>This parah focuses on the stories of previous nations, their rejection of the divine message, and the consequences they faced. It highlights the constant message brought by all prophets: the worship of the One God.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
+    
+            <div class="parah-item" onclick="toggleAudio(4)">
                 <p>4. Lan Tanalu (Parah 4)</p>
-                <audio controls>
-                    <source src="4.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+                <div class="extra-info" id="parah4-info">
+                    <audio controls id="audio4">
+                        <source src="4.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 4: Lan Tanalu.</p>
+                    <p>This parah speaks about charity, the importance of sincerity, and the consequences of false intentions in worship. It provides guidelines for self-purification and repentance.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
+            
+            <div class="parah-item" onclick="toggleAudio(5)">
                 <p>5. Wal Mohsanat (Parah 5)</p>
-                <audio controls>
-                    <source src="5.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+                <div class="extra-info" id="parah5-info">
+                    <audio controls id="audio5">
+                        <source src="5.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 5: Wal Mohsanat.</p>
+                    <p>This parah discusses the rules regarding marriage, divorce, and the rights of women. It emphasizes that Islam promotes justice, equity, and respect for all people, particularly women.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
+            
+            <div class="parah-item" onclick="toggleAudio(6)">
                 <p>6. La Yuhibbullah (Parah 6)</p>
-                <audio controls>
-                    <source src="6.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+                <div class="extra-info" id="parah6-info">
+                    <audio controls id="audio6">
+                        <source src="6.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 6: La Yuhibbullah.</p>
+                    <p>This parah emphasizes Allah’s love for those who act justly, repent sincerely, and avoid sin. It also discusses the value of guidance and the importance of obeying Allah's commands in every aspect of life.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>7. Wa Iza Samiu (Parah 7)</p>
-                <audio controls>
-                    <source src="7.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+        
+            <div class="parah-item" onclick="toggleAudio(7)">
+                <p>7. La Talu (Parah 7)</p>
+                <div class="extra-info" id="parah7-info">
+                    <audio controls id="audio7">
+                        <source src="7.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 7: La Talu.</p>
+                    <p>This parah highlights the need for patience and steadfastness when faced with adversity. It also discusses the themes of punishment for wrongdoing and the rewards of righteousness in the sight of Allah.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>8. Wa Lau Annana (Parah 8)</p>
-                <audio controls>
-                    <source src="8.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+    
+            <div class="parah-item" onclick="toggleAudio(8)">
+                <p>8. Ya Ayyuha (Parah 8)</p>
+                <div class="extra-info" id="parah8-info">
+                    <audio controls id="audio8">
+                        <source src="8.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 8: Ya Ayyuha.</p>
+                    <p>This parah addresses the theme of social justice, including the proper treatment of others, and the significance of equality in society. It reinforces the idea of Allah’s absolute sovereignty and the importance of humility.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>9. Qad Aflaha (Parah 9)</p>
-                <audio controls>
-                    <source src="9.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            
+            <div class="parah-item" onclick="toggleAudio(9)">
+                <p>9. Inna Ma (Parah 9)</p>
+                <div class="extra-info" id="parah9-info">
+                    <audio controls id="audio9">
+                        <source src="9.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 9: Inna Ma.</p>
+                    <p>This parah underscores the concepts of sincerity in faith and action, the need for community cooperation, and following the divine path for success in both this life and the afterlife.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>10. Wa Alamu (Parah 10)</p>
-                <audio controls>
-                    <source src="10.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+    
+            <div class="parah-item" onclick="toggleAudio(10)">
+                <p>10. Wa A'lamu (Parah 10)</p>
+                <div class="extra-info" id="parah10-info">
+                    <audio controls id="audio10">
+                        <source src="10.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 10: Wa A'lamu.</p>
+                    <p>This parah addresses the importance of faith in unseen matters, providing comfort for the believers, and the reminder that Allah is always aware of everything happening in the world.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>11. Ya tdhiruna (Parah 11)</p>
-                <audio controls>
-                    <source src="11.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+        
+            <div class="parah-item" onclick="toggleAudio(11)">
+                <p>11. Ya Ayyuha (Parah 11)</p>
+                <div class="extra-info" id="parah11-info">
+                    <audio controls id="audio11">
+                        <source src="11.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 11: Ya Ayyuha.</p>
+                    <p>This parah discusses the struggle of the believers and their efforts to preserve faith amidst adversities. It teaches perseverance and reliance on Allah.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>12. Wa Mamin Da abba (Parah 12)</p>
-                <audio controls>
-                    <source src="12.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            
+            <div class="parah-item" onclick="toggleAudio(12)">
+                <p>12. Al-A'raf (Parah 12)</p>
+                <div class="extra-info" id="parah12-info">
+                    <audio controls id="audio12">
+                        <source src="12.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 12: Al-A'raf.</p>
+                    <p>This parah discusses the story of the people of 'Ad and the consequences they faced due to their disobedience. It also contains lessons about trusting Allah and following the righteous path.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>13. Wa Ma Ubrioo (Parah 13)</p>
-                <audio controls>
-                    <source src="13.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            
+            <div class="parah-item" onclick="toggleAudio(13)">
+                <p>13. Al-Anfal (Parah 13)</p>
+                <div class="extra-info" id="parah13-info">
+                    <audio controls id="audio13">
+                        <source src="13.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 13: Al-Anfal.</p>
+                    <p>This parah speaks about the Battle of Badr and discusses the importance of unity and strength in the face of opposition. It also teaches that victory comes from Allah’s support.</p>
+                </div>
             </div>
 
-            <div class="parah-item">
-                <p>14. Rubama (Parah 14)</p>
-                <audio controls>
-                    <source src="14.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+        
+            <div class="parah-item" onclick="toggleAudio(14)">
+                <p>14. Wa-idh (Parah 14)</p>
+                <div class="extra-info" id="parah14-info">
+                    <audio controls id="audio14">
+                        <source src="14.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 14: Wa-idh.</p>
+                    <p>This parah discusses the role of the Prophet Muhammad (PBUH) as a mercy for all of mankind and emphasizes the importance of following the divine guidance provided in the Quran and the Hadith.</p>
+                </div>
             </div>
+            
+            <!-- Parah 15 -->
+            <div class="parah-item" onclick="toggleAudio(15)">
+                <p>15. Fa-idha (Parah 15)</p>
+                <div class="extra-info" id="parah15-info">
+                    <audio controls id="audio15">
+                        <source src="15.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 15: Fa-idha.</p>
+                    <p>This parah discusses the importance of repentance and seeking Allah’s forgiveness. It calls the believers to engage in righteous deeds and avoid arrogance and pride in front of others.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 16 -->
+            <div class="parah-item" onclick="toggleAudio(16)">
+                <p>16. Lillahi (Parah 16)</p>
+                <div class="extra-info" id="parah16-info">
+                    <audio controls id="audio16">
+                        <source src="16.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 16: Lillahi.</p>
+                    <p>This parah highlights the importance of charity and helping those in need, including the poor and the orphans. It reminds us of the rewards of assisting others in the name of Allah.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 17 -->
+            <div class="parah-item" onclick="toggleAudio(17)">
+                <p>17. Qad Aflaha (Parah 17)</p>
+                <div class="extra-info" id="parah17-info">
+                    <audio controls id="audio17">
+                        <source src="17.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 17: Qad Aflaha.</p>
+                    <p>This parah describes the qualities of the believers, those who have succeeded by following Allah’s commands and acting righteously. It speaks about moral and spiritual purification.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 18 -->
+            <div class="parah-item" onclick="toggleAudio(18)">
+                <p>18. A'lamu (Parah 18)</p>
+                <div class="extra-info" id="parah18-info">
+                    <audio controls id="audio18">
+                        <source src="18.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 18: A'lamu.</p>
+                    <p>This parah reminds the believers of Allah's mercy and patience, as well as the importance of sincerity in worship and obedience. It highlights the guidance provided by Allah through the Quran.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 19 -->
+            <div class="parah-item" onclick="toggleAudio(19)">
+                <p>19. Wa Yudhi (Parah 19)</p>
+                <div class="extra-info" id="parah19-info">
+                    <audio controls id="audio19">
+                        <source src="19.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 19: Wa Yudhi.</p>
+                    <p>This parah speaks about the value of good deeds and the consequences of harmful actions. It emphasizes the need for personal accountability and the importance of faith in overcoming challenges.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 20 -->
+            <div class="parah-item" onclick="toggleAudio(20)">
+                <p>20. Qul Ya Ayyuha (Parah 20)</p>
+                <div class="extra-info" id="parah20-info">
+                    <audio controls id="audio20">
+                        <source src="20.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 20: Qul Ya Ayyuha.</p>
+                    <p>This parah calls the believers to remain steadfast and to trust in the wisdom of Allah. It provides guidance on how to handle difficulties and uncertainties in life while maintaining faith.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 21 -->
+            <div class="parah-item" onclick="toggleAudio(21)">
+                <p>21. Fawwala (Parah 21)</p>
+                <div class="extra-info" id="parah21-info">
+                    <audio controls id="audio21">
+                        <source src="21.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 21: Fawwala.</p>
+                    <p>This parah discusses the importance of sincerity in actions and faith. It teaches the lessons of the past prophets and how their teachings should be applied to the current generation.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 22 -->
+            <div class="parah-item" onclick="toggleAudio(22)">
+                <p>22. Idh (Parah 22)</p>
+                <div class="extra-info" id="parah22-info">
+                    <audio controls id="audio22">
+                        <source src="22.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 22: Idh.</p>
+                    <p>This parah teaches the importance of fulfilling promises, maintaining integrity, and being conscious of one’s duties and responsibilities towards others.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 23 -->
+            <div class="parah-item" onclick="toggleAudio(23)">
+                <p>23. Wa A'lamu (Parah 23)</p>
+                <div class="extra-info" id="parah23-info">
+                    <audio controls id="audio23">
+                        <source src="23.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 23: Wa A'lamu.</p>
+                    <p>This parah emphasizes the mercy of Allah, the importance of justice, and the need to consistently seek forgiveness for one’s shortcomings.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 24 -->
+            <div class="parah-item" onclick="toggleAudio(24)">
+                <p>24. La Yuhibb (Parah 24)</p>
+                <div class="extra-info" id="parah24-info">
+                    <audio controls id="audio24">
+                        <source src="24.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 24: La Yuhibb.</p>
+                    <p>This parah discusses the importance of righteousness and avoiding the deeds that lead to harm or evil. It calls for the avoidance of arrogance and urges humility before Allah.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 25 -->
+            <div class="parah-item" onclick="toggleAudio(25)">
+                <p>25. Qaddafi (Parah 25)</p>
+                <div class="extra-info" id="parah25-info">
+                    <audio controls id="audio25">
+                        <source src="25.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 25: Qaddafi.</p>
+                    <p>This parah discusses the concept of gratitude towards Allah and the importance of recognizing His blessings. It also encourages believers to follow the teachings of the Prophet Muhammad (PBUH).</p>
+                </div>
+            </div>
+            
+            <!-- Parah 26 -->
+            <div class="parah-item" onclick="toggleAudio(26)">
+                <p>26. Ana (Parah 26)</p>
+                <div class="extra-info" id="parah26-info">
+                    <audio controls id="audio26">
+                        <source src="26.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 26: Ana.</p>
+                    <p>This parah reflects on the signs of Allah and how the creation of the heavens and the earth points to His greatness. It encourages deep reflection and connection with the divine.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 27 -->
+            <div class="parah-item" onclick="toggleAudio(27)">
+                <p>27. Ya Bani (Parah 27)</p>
+                <div class="extra-info" id="parah27-info">
+                    <audio controls id="audio27">
+                        <source src="27.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 27: Ya Bani.</p>
+                    <p>This parah calls the people to remember the blessings of Allah, to be grateful, and to reflect on the nature of the universe and His ultimate power.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 28 -->
+            <div class="parah-item" onclick="toggleAudio(28)">
+                <p>28. Wa-idaa (Parah 28)</p>
+                <div class="extra-info" id="parah28-info">
+                    <audio controls id="audio28">
+                        <source src="28.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 28: Wa-idaa.</p>
+                    <p>This parah emphasizes the strength and wisdom of Allah, as well as the importance of faith and following the path that leads to salvation.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 29 -->
+            <div class="parah-item" onclick="toggleAudio(29)">
+                <p>29. Qaddafi (Parah 29)</p>
+                <div class="extra-info" id="parah29-info">
+                    <audio controls id="audio29">
+                        <source src="29.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 29: Qaddafi.</p>
+                    <p>This parah addresses the trials of the believers, urging them to persevere and trust in Allah’s plan. It reminds them of the ultimate victory for those who believe.</p>
+                </div>
+            </div>
+            
+            <!-- Parah 30 -->
+            <div class="parah-item" onclick="toggleAudio(30)">
+                <p>30. Qul Ya Ayyuha (Parah 30)</p>
+                <div class="extra-info" id="parah30-info">
+                    <audio controls id="audio30">
+                        <source src="30.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Details about Parah 30: Qul Ya Ayyuha.</p>
+                    <p>This final parah calls the believers to unity, humility, and prayer. It emphasizes the importance of seeking forgiveness and relying on Allah’s mercy as the ultimate source of strength and salvation.</p>
+                </div>
+            </div>
+            
+            </div>
+            </section>
+            
+            <footer class="footer">
+                <p>&copy; 2024 Quranic Music. All rights reserved.</p>
+            </footer>
+            
+            <script src="parahs.js"></script>
+            </body>
+            
+            </html>
 
-            <div class="parah-item">
-                <p>15. Subhanallazi (Parah 15)</p>
-                <audio controls>
-                    <source src="15.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>16. Qaal Alam (Parah 16)</p>
-                <audio controls>
-                    <source src="16.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>17. Iqtarabat (Parah 17)</p>
-                <audio controls>
-                    <source src="17.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>18. Qadd Aflaha (Parah 18)</p>
-                <audio controls>
-                    <source src="18.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>19. Wa Qalallazina (Parah 19)</p>
-                <audio controls>
-                    <source src="19.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>20. Amaan Khalaqna (Parah 20)</p>
-                <audio controls>
-                    <source src="20.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>21. Utlu Ma Oohiya (Parah 21)</p>
-                <audio controls>
-                    <source src="21.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>22. Wa Manyaqnut (Parah 22)</p>
-                <audio controls>
-                    <source src="22.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>23. Wa Mali (Parah 23)</p>
-                <audio controls>
-                    <source src="23.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>24. Faman Azlam (Parah 24)</p>
-                <audio controls>
-                    <source src="24.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>25. Elahe Yuruddu (Parah 25)</p>
-                <audio controls>
-                    <source src="25.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>26. Haa Meem (Parah 26)</p>
-                <audio controls>
-                    <source src="26.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>27. Qala Fama Khatbukum (Parah 27)</p>
-                <audio controls>
-                    <source src="27.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>28. Qadd Sami Allah (Parah 28)</p>
-                <audio controls>
-                    <source src="28.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>29. Tabarakallazi (Parah 29)</p>
-                <audio controls>
-                    <source src="29.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="parah-item">
-                <p>30. Amma Yatasaaloon (Parah 30)</p>
-                <audio controls>
-                    <source src="30.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
-    </section>
 
     <footer class="footer">
         <p>&copy; 2024 Quranic Music. All rights reserved.</p>
