@@ -47,6 +47,52 @@ header .nav ul li a:hover {
     background: linear-gradient(45deg, #ffd700,#ffc700,#ffb700,#ffa700,#ff9700);
     border-radius: 20px;
 }
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 70%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(90deg, #FFF700, #FFD700);
+    color: #333;
+    font-weight: bold;
+}
+
+.search-bar input::placeholder {
+    color: #555;
+}
+
+.search-bar input:focus {
+    border-color: #FFC300;
+    box-shadow: 0 0 10px rgba(255, 195, 0, 0.8);
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #FFC300;
+    color: #000;
+}
+
+
 
 .hero {
     height: 350px;
@@ -89,6 +135,13 @@ header .nav ul li a:hover {
     font-size: 19px;
     color: #DDDDDD; 
 }
+.extra-info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+
+    
+}
 
 .parah-list {
     text-align: center;
@@ -96,6 +149,7 @@ header .nav ul li a:hover {
 }
 
 .parah-list h2 {
+    cursor:default;
     font-size: 35px;
     margin-bottom: 20px;
     text-align: center;
