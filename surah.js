@@ -1,6 +1,6 @@
 function searchSurah() {
     const input = document.getElementById('searchInput').value.toLowerCase().trim(); 
-    const parahContainer = document.getElementById('parahContainer');
+    const surahContainer = document.getElementById('surahContainer');
     const items = surahContainer.getElementsByClassName('surah-item');
 
     for (let i = 0; i < items.length; i++) {
