@@ -15,13 +15,28 @@ function searchSurah() {
 function toggleAudio(parahNumber) {
     var extraInfo = document.getElementById("parah" + parahNumber + "-info");
 
-    // Toggle the display of the extra-info div
+    
     if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+
+
+        var allExtraInfos = document.querySelectorAll('[id^="parah"][id$="-info"]');
+        allExtraInfos.forEach(function(info) {
+            info.style.display = "none";  
+            info.scrollTop = 0;  
+        });
+
+
         extraInfo.style.display = "block";
+
+        
+        extraInfo.scrollIntoView({ behavior: "smooth", block: "start" });
     } else {
+        
         extraInfo.style.display = "none";
     }
 }
+
+
 
 
 
