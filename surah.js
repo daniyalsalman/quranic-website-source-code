@@ -15,18 +15,20 @@ function searchSurah() {
 function toggleSurah(element) {
     const surahContent = element.querySelector('.surah-content');
 
-    // If the content is not already visible, make it visible and hide all others
     if (surahContent.style.display === "none" || surahContent.style.display === "") {
-        // First, hide all other Surah contents
+        
+        
         const allSurahContents = document.querySelectorAll('.surah-content');
         allSurahContents.forEach(content => {
-            content.style.display = "none";  // Hide the other Surah content
+            content.style.display = "none";
+            content.scrollTop = 0;  
         });
-
-        // Then show the clicked Surah content
         surahContent.style.display = "block";
+
+
+        surahContent.scrollIntoView({ behavior: "smooth", block: "start" });
     } else {
-        // If the content is already visible, hide it
+    
         surahContent.style.display = "none";
     }
 }
