@@ -1,1 +1,1 @@
-# ict project Quranic web app
+# Project Quranic web app
